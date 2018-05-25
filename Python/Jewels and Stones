@@ -33,7 +33,7 @@ class Solution(object):
         return sum(s in lookup for s in S)
         
         
-#Method Two:
+# Method Two:
 class Solution(object):
     def numJewelsInStones(self, J, S):
         """
@@ -43,3 +43,20 @@ class Solution(object):
         """
         return sum([1 if stone in J else 0 for stone in S])
 
+
+# My Method:
+class Solution:
+    def numJewelsInStones(self, J, S):
+        """
+        :type J: str
+        :type S: str
+        :rtype: int
+        """
+        s = len(S)
+        count = 0
+        for i in range(s):
+            if S[i] in J:
+                count += 1
+            else:
+                pass
+        return count
