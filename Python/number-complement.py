@@ -28,12 +28,13 @@ class Solution:
         b = 2**a-1
         return b-num
 # Explanation: Use bin() to convert num to binary / Binary has two prefixes--0b,So you should subtract 2;
-               2**Binary length is The same length binary maximum + 1 / So subtract 1 is the same length binary maximum
-               subtract num is it's complement
+#              2**Binary length is The same length binary maximum + 1 / So subtract 1 is the same length binary maximum
+#              subtract num is it's complement
+
 # Such as: 5      binary is: ob101       a = 3
-           2**3 is   111 + 1 = 1000, So subtract 1 is 111
-           111 - 101 is it's completement;
-           
+#          2**3 is   111 + 1 = 1000, So subtract 1 is 111
+#         111 - 101 is it's completement;
+          
 # Another kind of expression：
       return 2 ** (len(bin(num)) - 2) - 1 - num
       
